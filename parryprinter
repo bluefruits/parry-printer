@@ -1,0 +1,18 @@
+import time
+import random
+  
+def parryprinter(t, i):
+    
+    while t:
+        timer = '{}'.format(random.randint(1,9))
+        print(timer, end="\r")
+        time.sleep(int(i))
+        t -= 1
+    print('Good job!!')
+  
+  
+t = input("Enter the amount of repetitions: ")
+i = input("Enter the intervals in seconds: ")
+  
+
+parryprinter(int(t), int(i))
