@@ -17,4 +17,5 @@ t = input("Enter the amount of repetitions: ")
 i = input("Enter the intervals in seconds: ")
   
 
-parryprinter(int(t), int(i))
+if __name__ == "__main__":
+    parryprinter(int(t), int(i))
