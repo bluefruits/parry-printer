@@ -7,10 +7,10 @@ def parryprinter(t, i):
     
     while t:
         timer = '{}'.format(random.randint(1,9))
-        print(timer, end="\r")
+        print(f'\r{timer}', end='')
         time.sleep(int(i))
         t -= 1
-    print('Good job!!')
+    print('\n\nGood job!!')
   
   
 t = input("Enter the amount of repetitions: ")
